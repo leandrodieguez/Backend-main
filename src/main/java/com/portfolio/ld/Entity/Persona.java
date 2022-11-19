@@ -17,17 +17,27 @@ public class Persona {
     private String about;
     private String title;
     private String banner;
+    private String telefono;
+    private String correo;
+    private String provincia;
+    private String pais;
+    private String fechanacimiento;
 
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, String img, String about, String title, String banner) {
+    public Persona(String nombre, String apellido, String img, String about, String title, String banner, String telefono, String correo, String provincia, String pais, String fechanacimiento) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.img = img;
         this.about = about;
         this.title = title;
         this.banner = banner;
+        this.telefono = telefono;
+        this.correo = correo;
+        this.provincia = provincia;
+        this.pais = pais;
+        this.fechanacimiento = fechanacimiento;
     }
 
     public int getId() {
@@ -85,6 +95,50 @@ public class Persona {
     public void setBanner(String banner) {
         this.banner = banner;
     }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getProvincia() {
+        return provincia;
+    }
+
+    public void setProvincia(String proviencia) {
+        this.provincia = proviencia;
+    }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public String getFechanacimiento() {
+        return fechanacimiento;
+    }
+
+    public void setFechanacimiento(String fechanacimiento) {
+        this.fechanacimiento = fechanacimiento;
+    }
+    
+    
+    
+    
     
     
 }

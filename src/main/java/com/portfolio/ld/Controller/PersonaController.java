@@ -60,7 +60,7 @@ public class PersonaController {
         }
         
         Persona persona = new Persona(
-        dtopersona.getNombre(), dtopersona.getApellido(),dtopersona.getImg(),dtopersona.getAbout(),dtopersona.getTitle(),dtopersona.getBanner()
+        dtopersona.getNombre(), dtopersona.getApellido(),dtopersona.getImg(),dtopersona.getAbout(),dtopersona.getTitle(),dtopersona.getBanner(),dtopersona.getTelefono(),dtopersona.getCorreo(), dtopersona.getProvincia(), dtopersona.getPais(),dtopersona.getFechanacimiento()
         );
         personaService.save(persona);
         return new ResponseEntity(new Mensaje("Persona creado"), HttpStatus.OK);
@@ -87,6 +87,11 @@ public class PersonaController {
         persona.setAbout(dtopersona.getAbout());
         persona.setTitle(dtopersona.getTitle());
         persona.setBanner(dtopersona.getBanner());
+        persona.setTelefono(dtopersona.getTelefono());
+        persona.setCorreo(dtopersona.getCorreo());
+        persona.setProvincia(dtopersona.getProvincia());
+        persona.setPais(dtopersona.getPais());
+        persona.setFechanacimiento(dtopersona.getFechanacimiento());
         
         personaService.save(persona);
         
